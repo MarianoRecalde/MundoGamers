@@ -1,0 +1,341 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300;400&display=swap");
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+#cuerpo {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "header" "main" "footer";
+  background-color: rgb(78, 6, 6);
+}
+
+header {
+  background-color: black;
+  padding-left: 3px;
+  display: flex;
+  justify-content: space-between;
+}
+
+header nav {
+  margin: 10px;
+}
+header nav a {
+  color: white;
+  text-decoration: none;
+}
+
+header nav li {
+  font-family: "Oswald", sans-serif;
+  color-scheme: white;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+header img {
+  margin-left: 3px;
+  margin-top: 3px;
+  align-items: center;
+  width: 30px;
+  height: 40px;
+  margin-right: 50px;
+}
+header img .imagen {
+  display: flex;
+  align-items: center;
+}
+header img .imagen img {
+  height: 40px;
+  margin-right: 0px;
+}
+
+main {
+  text-align: center;
+  position: relative;
+}
+main .mundo_gamer {
+  text-align: center;
+}
+main .descuento {
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+main .bk {
+  margin-left: 0px;
+}
+main .parrafo {
+  color: white;
+  background-color: black;
+  text-align: center;
+}
+main .carta {
+  width: 300px;
+  background-color: rgb(170, 168, 168);
+  margin-top: 40px;
+  padding: 0px;
+  margin-left: 60%;
+  border-radius: 5px;
+  display: inline-block;
+  box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+}
+main .carta .fifa22 {
+  width: 600px;
+  position: absolute;
+  left: 100px;
+  border-radius: 5px;
+  top: 530px;
+}
+main .carta .friday {
+  width: 600px;
+  position: absolute;
+  left: 100px;
+  top: 950px;
+  border-radius: 5px;
+}
+main .carta_imagen {
+  width: 295px;
+  right: 600px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+main .carta_doble {
+  font-size: 25px;
+}
+main .carta_boton {
+  font-size: 20px;
+  right: 300px;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: #f1e8e8;
+  background-color: rgb(60, 45, 145);
+}
+
+.mundo_gamer {
+  font-family: "Oswald", sans-serif;
+  color: white;
+}
+
+.carta_imagen {
+  width: 295px;
+  height: 150px;
+}
+
+.carta_boton {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+.carta_doble {
+  padding: 10px;
+  font-size: 15px;
+  border-radius: 5px;
+}
+
+@media screen and (max-width: 480px) {
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .descuento {
+    justify-content: center;
+  }
+  .friday {
+    width: 0%;
+    height: 0%;
+  }
+  .fifa22 {
+    width: 0px;
+    height: 0px;
+  }
+  .carta {
+    width: 200px;
+    background-color: rgb(170, 168, 168);
+    margin-top: 40px;
+    padding: 0px;
+    margin-left: 600px;
+    border-radius: 5px;
+    display: inline-block;
+    box-shadow: rgba(240, 46, 170, 0.4) -5px 5px, rgba(240, 46, 170, 0.3) -10px 10px, rgba(240, 46, 170, 0.2) -15px 15px, rgba(240, 46, 170, 0.1) -20px 20px, rgba(240, 46, 170, 0.05) -25px 25px;
+  }
+  .carta_imagen {
+    width: 200px;
+    right: 600px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  .carta_juegos {
+    font-size: 1.5rem;
+  }
+  .carta_doble {
+    font-size: 1.2rem;
+  }
+}
+.nuestros_beneficios {
+  text-align: center;
+  color: white;
+  background-color: black;
+}
+
+.contenedor {
+  display: grid;
+  flex-direction: column;
+  gap: 1rem;
+  /* padding: 1rem; */
+  width: 100%;
+}
+
+.caja {
+  border: solid 1px;
+  width: 100px;
+  height: 60px;
+  background: rgb(161, 20, 20);
+  background: linear-gradient(90deg, rgb(161, 20, 20) 22%, rgb(97, 29, 90) 65%);
+  display: grid;
+  place-items: center;
+  transition: all 1.5s;
+  transition-timing-function: ease-out;
+}
+
+.caja:hover {
+  width: 100%;
+  background-color: rgb(46, 134, 168);
+}
+
+.caja {
+  -webkit-animation-name: caja;
+          animation-name: caja;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 10;
+          animation-iteration-count: 10;
+}
+
+@-webkit-keyframes caja {
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes caja {
+  100% {
+    width: 100%;
+  }
+}
+.productos_de_nuestra_página {
+  background-color: black;
+  color: white;
+}
+.productos_de_nuestra_página .producto_gamer {
+  background-color: black;
+  color: white;
+}
+
+.producto_gamer {
+  background-color: black;
+  color: white;
+}
+
+.boton {
+  font-size: 20px;
+  right: 300px;
+  /* margin-bottom: 100px; */
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bolder;
+  padding: 10px 30px;
+  border-radius: 50px;
+  color: #f1e8e8;
+  background-color: rgb(60, 45, 145);
+}
+
+.tarjetitas {
+  width: 300px;
+  background-color: white;
+  margin-bottom: 0px;
+  padding: 0px;
+  margin-right: 1000px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.silla {
+  width: 100%;
+  right: 600px;
+  margin-bottom: 100px;
+  margin-bottom: 10px;
+}
+
+.tarjetitas {
+  transition: transform 1s;
+}
+
+.tarjetitas:hover {
+  transform: scale(1.1);
+  translate: 40px;
+}
+
+@media screen and (max-width: 480px) {
+  .imagengamer {
+    width: 300px;
+    height: 300px;
+    width: 350px;
+  }
+}
+.oferta_oferta {
+  background-color: black;
+  color: white;
+}
+
+.nuestros_productos {
+  background-color: black;
+  color: white;
+}
+
+.armar_tu_pc_gamer {
+  background-color: black;
+  color: white;
+}
+
+.componentes {
+  background-color: black;
+  color: white;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: black;
+  text-decoration: none;
+}
+
+.fa-youtube {
+  background-color: red;
+  border-radius: 20px;
+}
+
+.fa-facebook, .carta_boton {
+  background-color: blue;
+  border-radius: 20px;
+}
+
+.fa-instagram {
+  background-color: rgb(163, 25, 110);
+  border-radius: 20px;
+}
+
+.fa-facebook:hover, .carta_boton:hover {
+  background-color: red;
+}/*# sourceMappingURL=estilo.css.map */

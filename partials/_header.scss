@@ -1,0 +1,60 @@
+
+#cuerpo {
+
+    display: grid;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "header"
+        "main"
+        "footer";
+    background-color: rgb(78, 6, 6);
+}
+
+header {
+    background-color: black;
+    padding-left: 3px;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+header nav {
+    margin: 10px;
+
+    a{
+        color: white;
+    text-decoration: none;
+
+    }
+    
+}
+
+header nav li {
+    font-family: 'Oswald', sans-serif;
+    color-scheme: white;
+    display: inline-block;
+    margin-left: 10px;
+
+}
+
+header img {
+    margin-left: 3px;
+    margin-top: 3px;
+    align-items: center;
+    width: 30px;
+    height: 40px;
+    margin-right: 50px;
+
+    .imagen {
+        display: flex;
+        align-items: center;
+    }
+    
+    .imagen img {
+        height: 40px;
+        margin-right: 0px;
+    }
+
+}
+

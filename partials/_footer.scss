@@ -1,0 +1,35 @@
+footer {
+    text-align: center;
+    color: white;
+    background-color: black;
+    text-decoration: none;
+}
+
+$redes: (
+    youtube: red,
+    facebook: blue,
+    instagram: rgb(163, 25, 110)
+);
+
+
+
+
+@each $redsocial, $color in $redes {
+    .fa-#{$redsocial} {
+        background-color: $color;
+        border-radius: 20px;
+      
+    }
+}
+
+.fa-facebook {
+    
+
+    &:hover{
+        background-color: red;
+    }
+}
+
+.carta_boton{
+    @extend .fa-facebook;
+}
